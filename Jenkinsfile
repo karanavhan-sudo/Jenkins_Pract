@@ -16,7 +16,7 @@ pipeline {
 
         stage('Finish') {
             steps {
-                echo 'Pipeline completed!'
+              echo 'Webhook triggered this pipeline!'
             }
         }
     }
