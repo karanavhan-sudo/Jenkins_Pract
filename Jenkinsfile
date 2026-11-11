@@ -2,6 +2,12 @@ pipeline {
     agent any
 
     stages {
+        stage('environment check'){
+            steps {
+                echo 'node --verison'
+                echo 'npm --version'
+            }
+        }
         stage('Start') {
             steps {
                 echo 'Hello from Jenkins!'
