@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('environment check'){
             steps {
-                sh 'node --verison'
+                sh 'node --version'
                 sh 'npm --version'
             }
         }
